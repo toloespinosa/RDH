@@ -1,132 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-
-  <title>Reina de Hamburga</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <title>Reina de Hamburga</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <div id="loader">
-    <img src="assets/img/Logo RDH NEGRO.pdf" alt="Reina de Hamburga" class="loader-logo">
-  </div>
-
-  <div id="main-content" class="hidden">
-    <header class="header">
-        <div class="header-desktop">
-          <img src="assets/img/Logo RDH NEGRO.pdf" alt="Logo Reina de Hamburga" class="logo">
-          <nav class="nav-desktop">
-            <ul>
-              <li><a href="#delivery">Delivery</a></li>
-              <li><a href="#quienes-somos">Quiénes Somos</a></li>
-              <li><a href="carta.html">Carta</a></li>
-              <li><a href="#galeria">Galería</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>
-      
-        <div class="header-mobile">
-          <img src="assets/img/Logo RDH NEGRO.pdf" alt="Logo Reina de Hamburga" class="logo-mobile">
-          <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-          <nav class="nav-mobile" id="nav-menu">
-            <ul>
-              <li><a href="#delivery">Delivery</a></li>
-              <li><a href="#quienes-somos">Quiénes Somos</a></li>
-              <li><a href="carta.html">Carta</a></li>
-              <li><a href="#galeria">Galería</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <section class="delivery-section" id="delivery">
-        <h2>Haz tu pedido aquí</h2>
-        <div class="delivery-box">
-          <div class="delivery-logos">
-            <a href="https://www.ubereats.com/" target="_blank">
-              <img src="assets/img/ubereats.png" alt="Uber Eats">
-            </a>
-            <a href="https://www.pedidosya.cl/" target="_blank">
-              <img src="assets/img/pedidosya.png" alt="Pedidos Ya">
-            </a>
-            <a href="https://www.rappi.cl/" target="_blank">
-              <img src="assets/img/Rappi.png" alt="Rappi">
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="gallery-section" id="galeria">
-        <h2>Galería</h2>
-        <div class="carousel">
-            <div class="main-image" id="carouselTrack">
-              <img src="assets/img/Fotos/Guardiana verde.jpg" alt="Foto 2 (clon)">
-              <img src="assets/img/Fotos/Dama azul 2.jpg" alt="Foto 3 (clon)">
-              <img src="assets/img/Fotos/Pieza graf trio 3.jpg" alt="Foto 4 (clon)">
-              
-              <img src="assets/img/Fotos/Primer mandato.jpg" alt="Foto 1">
-              <img src="assets/img/Fotos/Guardiana verde.jpg" alt="Foto 2">
-              <img src="assets/img/Fotos/Dama azul 2.jpg" alt="Foto 3">
-              <img src="assets/img/Fotos/Pieza graf trio 3.jpg" alt="Foto 4">
-
-              <img src="assets/img/Fotos/Primer mandato.jpg" alt="Foto 1 (clon)">
-              <img src="assets/img/Fotos/Guardiana verde.jpg" alt="Foto 2 (clon)">
-              <img src="assets/img/Fotos/Dama azul 2.jpg" alt="Foto 3 (clon)">
-            </div>
-            <div class="thumbnails">
-              <img src="assets/img/Fotos/Primer mandato.jpg" alt="Foto 1" class="active" onclick="goToSlide(0)">
-              <img src="assets/img/Fotos/Guardiana verde.jpg" alt="Foto 2" onclick="goToSlide(1)">
-              <img src="assets/img/Fotos/Dama azul 2.jpg" alt="Foto 3" onclick="goToSlide(2)">
-              <img src="assets/img/Fotos/Pieza graf trio 3.jpg" alt="Foto 4" onclick="goToSlide(3)">
-            </div>
-          </div>
-          
-      </section>
-      
-      <section id="quienes-somos" class="quienes-somos">
-        <div class="container">
-          <h2>¿Quiénes Somos?</h2>
-          <p>
-            En <strong>Reina de Hamburga</strong>, no solo hacemos hamburguesas, forjamos leyendas. Nuestra cocina es un reino donde cada ingrediente es un noble y cada receta, una historia épica.
-            Inspirados en la mística medieval, servimos sabores dignos de un banquete real. 
-            Ven a probar la nobleza del sabor y sé parte de nuestra historia.
-          </p>
-        </div>
-      </section>
-      
-        <section id="contacto" class="contacto">
-    <div class="container">
-      <h2>Contáctanos</h2>
-      <form id="contactForm"> <div class="form-group">
-          <input type="text" name="nombre" placeholder="Tu nombre" required>
-        </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Tu correo electrónico" required>
-        </div>
-        <div class="form-group">
-          <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-        </div>
-        <button type="submit" id="submitButton">Enviar mensaje</button>
-        <span id="thankYouMessage" style="margin-left: 10px; color: #e2c044; display: none;"></span> 
-        </form>
+    <div id="loader">
+        <img src="assets/img/LOGO DEF.png" alt="Reina de Hamburga" class="loader-logo">
     </div>
-</section>
+    <div id="main-content" class="hidden">
+        <header class="header">
+            <div class="header-desktop">
+                <img src="assets/img/Logo RDH Blanco.png" alt="Logo Reina de Hamburga" class="logo">
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                        <li><a href="assets/pdf/carta.pdf" target="_blank">Carta</a></li> <li><a href="#delivery">Delivery</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-mobile">
+                <img src="assets/img/Logo RDH Blanco.png" alt="Logo Reina de Hamburga" class="logo-mobile">
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <nav class="nav-mobile" id="nav-menu">
+                    <ul>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                        <li><a href="assets/pdf/carta.pdf" target="_blank">Carta</a></li> <li><a href="#delivery">Delivery</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="delivery-section" id="delivery">
+            <h2>Haz tu pedido aquí</h2>
+            <div class="delivery-box">
+                <div class="delivery-logos">
+                    <a href="https://www.ubereats.com/cl/store/reina-de-hamburga/wDDPnTf9UZSLH4ZtZUIyDQ?diningMode=DELIVERY&ps=1&surfaceName=" target="_blank">
+                        <img src="assets/img/ubereats.png" alt="Uber Eats">
+                    </a>
+                    <a href="https://www.pedidosya.cl/" target="_blank">
+                        <img src="assets/img/pedidosya.png" alt="Pedidos Ya">
+                    </a>
+                    <a href="https://www.rappi.cl/" target="_blank">
+                        <img src="assets/img/Rappi.png" alt="Rappi">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="galeria">
+            <div class="carousel">
+                <div class="main-image" id="carouselTrack">
+                    <img src="assets/img/Fotos/Primer mandato.jpg" alt="Foto 1">
+                    <img src="assets/img/Fotos/Guardiana verde.jpg" alt="Foto 2">
+                    <img src="assets/img/Fotos/Dama azul 2.jpg" alt="Foto 3">
+                    <img src="assets/img/Fotos/Pieza graf trio 3.jpg" alt="Foto 4">
+                </div>
+                </div>
+        </section>
+
+         <section id="fixed-images" class="fixed-images-section">
+        <div class="container">
+            <img src="assets/img/Fotos/Banquete del herrero.jpg" alt="Imagen fija 1">
+            <img src="assets/img/Fotos/Crocante corona.jpg" alt="Imagen fija 2">
+            <img src="assets/img/Fotos/Desenfreno de la reina.jpg" alt="Imagen fija 3">
+            <img src="assets/img/Fotos/Dragon de fuego.jpg" alt="Imagen fija 4">
+            <img src="assets/img/Fotos/Susurro oceanico.jpg" alt="Imagen fija 5">
+        </div>
+    </section>
+
+      
+
+        <section id="quienes-somos" class="quienes-somos">
+            <div class="container">
+                <h2>¿Quiénes Somos?</h2>
+                <p>
+                    En <strong>Reina de Hamburga</strong>, no solo hacemos hamburguesas, forjamos leyendas. Nuestra cocina es un reino donde cada ingrediente es un noble y cada receta, una historia épica. Inspirados en la mística medieval, servimos sabores dignos de un banquete real. Ven a probar la nobleza del sabor y sé parte de nuestra historia.
+                </p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" id="submitButton">Enviar mensaje</button>
+                    <span id="thankYouMessage" style="margin-left: 10px; color: #e2c044; display: none;"></span>
+                </form>
+            </div>
+        </section>
 
         <footer class="footer">
             <div class="container">
-              <p>&copy; 2025 Reina de Hamburga. Todos los derechos reservados.</p>
-              <p>Diseñado con 🛡️ y 🍔</p>
+                <p>&copy; 2025 Reina de Hamburga. Todos los derechos reservados.</p>
+                <p>Diseñado con 🛡️ y 🍔</p>
             </div>
-          </footer>
-          
-      
-      
-  </div>
-
-  <script src="assets/js/script.js"></script>
+        </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

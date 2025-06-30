@@ -4,10 +4,10 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Georgia', serif;
-  }
-  
-  /* Pantalla de carga */
-  #loader {
+}
+
+/* Pantalla de carga */
+#loader {
     background-color: #000;
     height: 100vh;
     width: 100vw;
@@ -16,298 +16,308 @@ body, html {
     align-items: center;
     position: fixed;
     z-index: 9999;
-  }
-  
-  .loader-logo {
+}
+
+.loader-logo {
     width: 300px;
     height: auto;
-    /* AQUÍ SE AÑADE LA ANIMACIÓN DE PALPITACIÓN */
-    animation: pulse 1.5s infinite ease-in-out; 
-  }
+    animation: pulse 1.5s infinite ease-in-out;
+}
 
-  /* KEYFRAMES PARA LA ANIMACIÓN DE PALPITACIÓN */
-  @keyframes pulse {
-    0% {
-      transform: scale(1); /* Tamaño normal */
-      opacity: 1; /* Opacidad normal */
-    }
-    50% {
-      transform: scale(1.1); /* Ligeramente más grande */
-      opacity: 0.8; /* Ligeramente menos opaco */
-    }
-    100% {
-      transform: scale(1); /* Vuelve al tamaño normal */
-      opacity: 1; /* Vuelve a la opacidad normal */
-    }
-  }
+/* KEYFRAMES PARA LA ANIMACIÓN DE PALPITACIÓN */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
 
-  .logo {
-    width: 100px;
+.logo {
+    width: 120px;
     height: auto;
-  }
-  
-  /* Oculta el contenido hasta que cargue */
-  .hidden {
+}
+
+/* Oculta el contenido hasta que cargue */
+.hidden {
     display: none;
-  }
-  
- /* HEADER ESTÁNDAR */
+}
+
+/* HEADER ESTÁNDAR */
 .header {
     background-color: #fff;
     border-bottom: 2px solid #ccc;
-    padding: 10px 0;
-  }
-  
-  /* VERSIÓN DESKTOP */
-  .header-desktop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .nav-desktop ul {
+    padding: 0px 0;
+}
+
+/* VERSIÓN DESKTOP */
+.header-desktop {
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center; /* Alinear verticalmente */
+    padding: 0 20px; /* Añadir padding horizontal */
+}
+
+.nav-desktop ul {
     display: flex;
     gap: 30px;
     list-style: none;
     padding: 0;
-    margin-top: 10px;
-  }
-  
-  .nav-desktop a {
+    margin: 0; /* Eliminar margen superior */
+}
+
+.nav-desktop a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
     font-size: 1rem;
-  }
-  
-  /* VERSIÓN MÓVIL (OCULTA EN DESKTOP) */
-  .header-mobile {
+}
+.nav-desktop a:hover {
+    color: #e2c044; /* Color dorado al pasar el mouse */
+}
+
+/* VERSIÓN MÓVIL (OCULTA EN DESKTOP) */
+.header-mobile {
     display: none;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-  }
-  
-  .menu-toggle {
+}
+
+.menu-toggle {
     font-size: 28px;
     cursor: pointer;
     color: #000;
-  }
-  
-  .logo-mobile {
+}
+
+.logo-mobile {
     height: 50px;
-  }
-  
-  /* Menú desplegable móvil */
-  .nav-mobile {
+}
+
+/* Menú desplegable móvil */
+.nav-mobile {
     display: none;
     flex-direction: column;
     background-color: #222;
     padding: 10px 20px;
-  }
-  
-  .nav-mobile ul {
+}
+
+.nav-mobile ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .nav-mobile li {
+}
+
+.nav-mobile li {
     margin: 10px 0;
-  }
-  
-  .nav-mobile a {
+}
+
+.nav-mobile a {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
-  }
-  
-  /* Mostrar elementos móviles en pantallas pequeñas */
-  @media (max-width: 768px) {
+}
+
+/* Mostrar elementos móviles en pantallas pequeñas */
+@media (max-width: 768px) {
     .header-desktop {
-      display: none;
+        display: none;
     }
-  
     .header-mobile {
-      display: flex;
+        display: flex;
     }
-  
     .nav-mobile.active {
-      display: flex;
+        display: flex;
     }
-  }
-  
-  .delivery-section {
-  background-color: #111;
-  color: #fff;
-  text-align: center;
-  padding: 60px 20px;
+}
+
+/* Franja de Delivery */
+.delivery-section {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 2px 20px; /* Reducido para que sea una "pequeña franja" */
 }
 
 .delivery-section h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  font-family: 'Georgia', serif;
-  letter-spacing: 1px;
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño para el título */
+    margin-bottom: 15px; /* Margen inferior reducido */
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
 }
 
 .delivery-box {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    background-color: #fff;
+    padding: 5px; /* Reducido */
+    border-radius: 8px; /* Radio de borde más pequeño */
+    max-width: 600px; /* Ancho máximo más pequeño */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .delivery-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espacio entre logos reducido */
+    flex-wrap: wrap;
 }
 
 .delivery-logos img {
-  height: 60px;
-  filter: none;
-  transition: transform 0.3s ease;
+    height: 50px; /* Tamaño de logos ligeramente más pequeño */
+    filter: none;
+    transition: transform 0.3s ease;
 }
 
 .delivery-logos img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
     .delivery-logos {
-      gap: 20px; /* Reducimos el espacio entre logos para que quepan */
-      /* Aseguramos que no se envuelvan si es posible */
-      flex-wrap: nowrap; /* Intenta mantenerlos en una sola línea */
-      overflow-x: auto; /* Permite desplazamiento horizontal si no caben */
-      justify-content: flex-start; /* Alinea al inicio si hay desplazamiento */
-      padding: 0 10px; /* Pequeño padding si hay desplazamiento para que no toquen los bordes */
+        gap: 15px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
     }
-  
     .delivery-logos img {
-      height: 40px; /* Hacemos los logos más pequeños para que quepan en una línea */
-      width: auto; /* Asegura que el ancho se ajuste proporcionalmente a la nueva altura */
+        height: 35px;
+        width: auto;
     }
-  }
+}
 
-  /*Carrusel de imagenes*/
-
-  .gallery-section {
-  background-color: #111;
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
+/* Carrusel de imagenes */
+.gallery-section {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .gallery-section h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
 }
 
 .carousel {
     position: relative;
-    max-width: 100%; /* AQUÍ: AUMENTA ESTE VALOR PARA HACER EL CARRUSEL MÁS GRANDE */
-    margin: 0 auto; /* Centra el carrusel */
-    overflow: hidden; /* Oculta las imágenes fuera de la vista */
-  }
+    max-width: 100%; /* Asegura que el carrusel no exceda el ancho de la pantalla */
+    margin: 0 auto;
+    overflow: hidden; /* Crucial para mostrar solo una imagen a la vez */
+    aspect-ratio: 16 / 9; /* Esto mantendrá una relación de aspecto de 16:9 para el contenedor del carrusel. Ajusta según necesites. */
+    max-height: 80vh; /* Limita la altura del carrusel al 80% de la altura del viewport */
+}
 
 .main-image {
     display: flex;
     transition: transform 1s ease-in-out;
-    /* Este ancho se basa en 10 imágenes en total (3+4+3 clones+originales)
-       y que cada imagen debe ocupar 1/3 del ancho visible del carrusel para esta disposición.
-       Por lo tanto, (10 imágenes / 3 imágenes visibles) * 100% = 333.3333% */
-    width: 333.3333%; 
+    width: 800%; /* Suponiendo 4 imágenes originales + 4 clones (2 al inicio, 2 al final) = 8 imágenes totales en JS */
+    height: 100%; /* Asegura que la pista ocupe toda la altura de su padre (.carousel) */
 }
 
 .main-image img {
-    /* Cada imagen ocupa 1/10 del ancho total de .main-image.
-       Esto hace que cada imagen sea (1/10) * 333.3333% = ~33.33% del ancho del .carousel.
-       Con este porcentaje y overflow:hidden en .carousel, logramos la visualización de
-       la imagen central grande y las laterales parciales. */
-    width: calc(100% / 10); 
-    flex-shrink: 0; 
-    object-fit: cover; 
+    /* * CAMBIO IMPORTANTE AQUÍ:
+     * Cada imagen debe ocupar 1/8 (12.5%) del ancho de `.main-image`
+     * para que solo una imagen completa sea visible dentro del `overflow: hidden` de `.carousel`.
+     */
+    width: 12.5%; /* 100% / 8 imágenes totales = 12.5% */
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+    object-fit: cover; /* Rellena el espacio manteniendo la relación de aspecto */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura de la pista */
+    display: block;
+    margin: auto;
+}
+/* IMÁGENES FIJAS */
+.fixed-images-section {
+    background-color: #1b1b1b;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.thumbnails {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .thumbnails img {
-    width: 100px;
-    height: 60px;
-    object-fit: cover;
-    opacity: 0.7;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 6px;
-  }
-  
-  .thumbnails img.active {
-    opacity: 1;
-    border: 2px solid white;
-  }
+.fixed-images-section .container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 100%;
+    margin: 0 auto;
+}
 
-  .quienes-somos {
+.fixed-images-section img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Media query para adaptar las imágenes en pantallas más grandes */
+@media (max-width: 768px) {
+    .carousel {
+        /* Puedes ajustar la relación de aspecto para móvil si 16/9 es demasiado ancho */
+        aspect-ratio: 4 / 3; /* Un poco más "cuadrado" para móviles, o 1 / 1 para cuadrado perfecto */
+        max-height: 50vh; /* Limita la altura para que no ocupe demasiado espacio en la pantalla pequeña */
+    }
+
+    .main-image img {
+        /* Asegura que la imagen se adapte al 100% del contenedor en móvil */
+        object-fit: contain; /* Usar 'contain' para asegurar que la imagen completa se vea sin recortes */
+    }
+}
+/* FIN NUEVA SECCIÓN */
+
+
+.quienes-somos {
     background-color: #111;
     color: #f0f0f0;
     padding: 60px 20px;
     text-align: center;
-  }
-  
-  .quienes-somos .container {
+}
+
+.quienes-somos .container {
     max-width: 900px;
     margin: 0 auto;
-  }
-  
-  .quienes-somos h2 {
+}
+
+.quienes-somos h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #e2c044; /* un dorado medieval */
-    font-family: 'Cinzel', serif; /* puedes agregar esta fuente si deseas un look medieval */
-  }
-  
-  .quienes-somos p {
+    color: #e2c044;
+    font-family: 'Cinzel', serif;
+}
+
+.quienes-somos p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #ccc;
-  }
-  
-  .contacto {
+}
+
+.contacto {
     background-color: #1b1b1b;
     color: #f0f0f0;
     padding: 60px;
-    text-align: center; 
-  
-  }
-  
-  .contacto .container {
+    text-align: center;
+}
+
+.contacto .container {
     max-width: 700px;
     margin: 0 auto;
-  }
-  
-  .contacto h2 {
+}
+
+.contacto h2 {
     font-size: 2.5rem;
     color: #e2c044;
     font-family: 'Cinzel', serif;
     margin-bottom: 30px;
-  }
-  
-  .contacto .form-group {
+}
+
+.contacto .form-group {
     margin-bottom: 20px;
-  }
-  
-  .contacto input,
-  .contacto textarea {
+}
+
+.contacto input, .contacto textarea {
     width: 100%;
     padding: 15px;
     border: none;
@@ -315,14 +325,13 @@ body, html {
     background-color: #2c2c2c;
     color: #fff;
     font-size: 1rem;
-  }
-  
-  .contacto input::placeholder,
-  .contacto textarea::placeholder {
+}
+
+.contacto input::placeholder, .contacto textarea::placeholder {
     color: #aaa;
-  }
-  
-  .contacto button {
+}
+
+.contacto button {
     background-color: #e2c044;
     color: #1b1b1b;
     padding: 15px 30px;
@@ -332,20 +341,20 @@ body, html {
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s ease;
-  }
-  
-  .contacto button:hover {
-    background-color: #c9a63b;
-  }
+}
 
-  .footer {
+.contacto button:hover {
+    background-color: #c9a63b;
+}
+
+.footer {
     background-color: #0f0f0f;
     color: #777;
     text-align: center;
     padding: 30px 20px;
     font-size: 0.9rem;
-  }
-  
-  .footer p {
+}
+
+.footer p {
     margin: 5px 0;
-  }
+}
